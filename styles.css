@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  /*  use the link google fonts in html */
+  font-family: "Kadwa", serif;
+  font-weight: 400;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  /* load image from asset folders */
+  background-image: url("assets/backdrop.png");
+  background-position: center;
+
+  /* add blur to background */
+  /* filter: blur(5px); */
+
+  /* make the container flex */
+  display: flex;
+  /* align items in the center */
+  align-items: center;
+  /* justify content in the center */
+  justify-content: center;
+}
+
+.login__companylogo__group {
+  width: 15%;
+  height: 20%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login__companylogo__group p {
+  color: #4e5352;
+  font-size: 24.95px;
+}
+
+.login__container__right img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+}
+
+.login__container {
+  width: 90vw;
+  height: 90vh;
+  border-radius: 40px;
+  /* add a background color */
+  background-color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login__container__left {
+  width: 55%;
+  height: 90%;
+
+  /* make the container flex */
+  display: flex;
+  flex-direction: column;
+  /* align items in the center */
+  align-items: center;
+  /* justify content in the center */
+  justify-content: flex-start;
+}
+
+.login__container__left__text p {
+  font-size: 64px;
+}
+
+.login__container__left__google {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.login__container__left__google p {
+  color: rgba(17, 20, 45, 0.5);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login__container__left__google input {
+  width: 45%;
+  height: 50px;
+  border-radius: 4px;
+  border: 1px solid rgba(78, 83, 82, 1);
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.login__container__left__google button {
+  background-color: rgba(255, 214, 69, 1);
+  border-radius: 112px;
+  border: none;
+  height: 15%;
+  width: 30%;
+  cursor: pointer;
+}
+
+.login__container__right {
+  width: 40%;
+  height: 95%;
+}
+
+@media screen and (min-width: 1900px) {
+  .login__container {
+    width: 70vw;
+    height: 70vh;
+  }
+}
